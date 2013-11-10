@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["dennis.hackethal@gmail.com"]
   spec.description   = %q{This gem makes has_many associations with limits and has_one associations prettier for Rails.}
   spec.summary       = %q{This gem enables you to write code like `has 3, :associations` instead of the more verbose `has_many :associations, limit: 3`}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/dchacke/no_limits"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
