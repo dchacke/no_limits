@@ -1,21 +1,6 @@
 # NoLimits
 
-An active record extension.
-This gem makes has_many associations with limits and has_one associations prettier.
-
-For example:
-
-Instead of the verbose
-
-    has_many :associations, limit: 3
-
-you can simply write
-
-    has 3, :assocations
-
-You can append any options as normally, like
-
-    has 3, :assocations, dependent: :destroy
+An active record extension. This gem makes has_many associations with limits and has_one associations prettier.
 
 ## Installation
 
@@ -33,7 +18,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Instead of the verbose
+
+    has_many :associations, limit: 3
+
+you can simply write
+
+    has 3, :assocations
+
+You can append any options as normally, like
+
+    has 3, :assocations, dependent: :destroy
+
+That's it!
 
 ## Contributing
 
