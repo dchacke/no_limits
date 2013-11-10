@@ -41,3 +41,6 @@ That's it! It also works with has_one associations like so:
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## Thanks
+...to @fvonx and @metafoo for the inspiration.
