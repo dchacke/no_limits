@@ -12,7 +12,7 @@ describe ActiveRecord::Base do
 				specify { association_reflection.should be_a ActiveRecord::Reflection::AssociationReflection }
 				specify { association_reflection.macro.should eq :has_many }
 				specify { association_reflection.name.should eq :associations }
-				specify { association_reflection.scope.options[:limit].should eq 3 }
+				specify { association_reflection.scope.should be_a Proc }
 				specify { association_reflection.options[:dependent].should eq :destroy }
 			end
 

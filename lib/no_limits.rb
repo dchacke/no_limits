@@ -9,7 +9,7 @@ end
 class ActiveRecord::Base
 	def self.has limit, name, options = {}
 		if limit > 1
-	    has_many name.to_sym, { limit: limit }.merge(options)
+	    has_many name.to_sym, -> { limit(limit) }, options
 	  else
 	  	has_one name.to_sym, options
 	  end
