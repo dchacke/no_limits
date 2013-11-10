@@ -1,6 +1,6 @@
 # NoLimits
 
-An active record extension. This gem makes has_many associations with limits and has_one associations prettier.
+An active record extension for active record 3 and 4. This gem makes has_many associations with limits and has_one associations prettier.
 
 ## Installation
 
