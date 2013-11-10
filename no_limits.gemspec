@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = NoLimits::VERSION
   spec.authors       = ["Dennis Charles Hackethal"]
   spec.email         = ["dennis.hackethal@gmail.com"]
-  spec.description   = %q{This gem makes has_many associations with limits prettier for Rails.}
+  spec.description   = %q{This gem makes has_many associations with limits and has_one associations prettier for Rails.}
   spec.summary       = %q{This gem enables you to write code like `has 3, :associations` instead of the more verbose `has_many :associations, limit: 3`}
   spec.homepage      = ""
   spec.license       = "MIT"
