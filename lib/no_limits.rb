@@ -9,7 +9,7 @@ end
 class ActiveRecord::Base
 	def self.has limit, name, options = {}
 		if limit > 1
-			if ActiveRecord::VERSION::MAJOR < 4 # support for active_record versions below 3
+			if ActiveRecord::VERSION::MAJOR < 4 # support for active_record versions <= 3
 				has_many name.to_sym, { limit: limit }.merge(options)
 			else
 				has_many name.to_sym, -> { limit(limit) }, options # support for active_record version 4
