@@ -30,7 +30,9 @@ You can append any options as normally, like
 
     has 3, :assocations, dependent: :destroy
 
-That's it!
+That's it! It also works with has_one associations like so:
+
+    has 1, :association
 
 ## Contributing
 
