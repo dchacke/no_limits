@@ -18,6 +18,8 @@ Or install it yourself as:
 
 ## Usage
 
+Rather than using different method names for `has_many` and `has_one` associations, and rather than specifying a limit for those associations, the idea is to solely rely on the English language to figure out what kind of a parent association is needed by simply passing a number to a method called `has`.
+
 Instead of the verbose
 
     has_many :associations, limit: 3
@@ -26,9 +28,9 @@ you can simply write
 
     has 3, :assocations
 
-You can append any options as normally, like
+You can append any options as you normally would, like
 
-    has 3, :assocations, dependent: :destroy
+    has 3, :assocations, dependent: :destroy, as: :watchable
 
 That's it! It also works with has_one associations like so:
 
