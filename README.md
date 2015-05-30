@@ -6,15 +6,21 @@ An active record extension for active record 3 and 4. This gem makes has_many as
 
 Add this line to your application's Gemfile:
 
-    gem 'no_limits'
+```ruby
+  gem 'no_limits'
+```
 
 And then execute:
 
-    $ bundle
+```shell
+  $ bundle
+```
 
 Or install it yourself as:
 
-    $ gem install no_limits
+```shell
+  $ gem install no_limits
+```
 
 ## Usage
 
@@ -22,19 +28,27 @@ Rather than using different method names for `has_many` and `has_one` associatio
 
 Instead of the verbose
 
-    has_many :associations, limit: 3
+```ruby
+  has_many :associations, limit: 3
+```
 
 you can simply write
 
-    has 3, :assocations
+```ruby
+  has 3, :assocations
+```
 
 You can append any options as you normally would, like
 
-    has 3, :assocations, dependent: :destroy, as: :watchable
+```ruby
+  has 3, :assocations, dependent: :destroy, as: :watchable
+```
 
 That's it! It also works with has_one associations like so:
 
-    has 1, :association
+```ruby
+  has 1, :association
+```
 
 ## Contributing
 
