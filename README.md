@@ -59,4 +59,4 @@ That's it! It also works with has_one associations like so:
 5. Create new Pull Request
 
 ## Thanks
-...to @fvonx and @metafoo for the inspiration.
+...to [fvonx](https://github.com/fvonx) and [metafoo](https://github.com/metafoo) for the inspiration.
